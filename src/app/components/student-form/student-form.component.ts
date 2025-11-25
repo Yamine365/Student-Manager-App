@@ -59,9 +59,9 @@ if (idParam) {
     if (this.form.invalid) return;
     const student: Student = this.form.value;
     if (this.isEdit) {
-      this.service.update(this.id, student).subscribe(() => this.router.navigate(['/']));
+      this.service.update(this.id, student).subscribe(() => this.router.navigate(['/students']));
     } else {
-      this.service.create(student).subscribe(() => this.router.navigate(['/']));
+      this.service.create(student).subscribe(() => this.router.navigate(['/students']));
     }
   }
 }

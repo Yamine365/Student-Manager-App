@@ -7,6 +7,6 @@ import { RouterModule } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   standalone: true,
-  imports: [CommonModule, StudentFormComponent, RouterModule] 
+  imports: [CommonModule, RouterModule, StudentFormComponent]
 })
 export class AppComponent {}

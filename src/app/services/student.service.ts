@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { Student } from '../models/student.model';
 @Injectable({ providedIn: 'root' })
 export class StudentService {
-private apiUrl = 'http://localhost:3000/students';
+private apiUrl = 'http://localhost:9846/api/students';
 constructor(private http: HttpClient) {}
 getAll(): Observable<Student[]> {
 return this.http.get<Student[]>(this.apiUrl);
